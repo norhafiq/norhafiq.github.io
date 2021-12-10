@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("images/IMG_20200126_185239.jpg");
+
+  height: 100%;
+
+  /*Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Set a style for the submit button */
+.button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+
+  p {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, rgb(136, 255, 0), #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+  
+
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="home.html" class="w3-button w3-bar-item">Home</a>
+    <a href="resume.html" class="w3-button w3-bar-item">Resume</a>
+    <a href="gallery.html" class="w3-button w3-bar-item">Gallery</a>
+    <a href="academic.html" class="w3-button w3-bar-item">Acedemic</a>
+  </nav>
+
+  <p>thank you 😊</p>
+
+  <form action="/action_page.php" class="container">
+ 
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="country">Satisfaction</label>
+    <select id="country" name="country">
+      <option value="australia">Excellent</option>
+      <option value="canada">Average</option>
+      <option value="usa">Poor</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." required style="height:200px"></textarea>
+   
+    <a href="https://www.google.com/search?q=thank+you&oq=th&aqs=chrome.0.69i59l2j69i57j46i131i433j0i131i433i512j69i60l2j69i61.2097j0j7&sourceid=chrome&ie=UTF-8" 
+    class="button">Submit</a>
+  </form>
+
+</body>
+
+
+</html>
