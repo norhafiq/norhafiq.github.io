@@ -1,2 +1,3 @@
 # norhafiq.github.io
-my first page
+list of my csc574 assignment
+use norhafiq.github.io to check it out
